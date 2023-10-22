@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <img src="https://github.com/lvamorim/psn-store/assets/118397791/0cfae615-e816-48f0-be33-7cbf1ce82715" alt="PSN Store" width="500px">
+  <img src="https://github.com/lvamorim/psn-store/assets/118397791/720da742-646b-48ee-af23-2bc68ddcae0c" alt="PSN Store" width="500px">
 </div>
 
 ## Topics
