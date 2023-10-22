@@ -1,0 +1,46 @@
+@use '../../../../styles.scss' as *;
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    font-weight: 700;
+    padding: .5rem 1rem;
+
+    &.active {
+      background-color: $secondary-dark-color;
+      border-radius: $shape;
+    }
+  }
+
+  @include mediaQuery {
+    background-color: $secondary-color;
+    box-shadow: 0 2rem $shadow;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+
+    &.hidden {
+      display: none;
+    }
+
+    a {
+      color: $primary-color;
+      display: block;
+      padding: 1rem $spacing;
+
+      &.active {
+        background-color: transparent;
+        border-radius: 0;
+      }
+
+      &:hover {
+        background-color: $tertiary-transparent-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use '../../../../styles.scss' as *;
+
+button {
+  $spacing: 1rem;
+  padding-left: $spacing;
+  padding-right: $spacing;
+  display: none;
+
+  .icon {
+    fill: none;
+    vertical-align: middle;
+    width: 1.5rem;
+  
+    path {
+      stroke: $tertiary-color;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+
+  @include mediaQuery {
+    &.hidden {
+      display: initial;
+    }
+  }
+}

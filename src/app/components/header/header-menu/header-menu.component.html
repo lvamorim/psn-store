@@ -1,0 +1,9 @@
+<nav>
+  <ul [ngClass]="{ 'hidden': isMobileMenuClosed }">
+    <li *ngFor="let route of routes">
+      <a [routerLink]="[route.path]" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+        {{ route.path || 'home' }}
+      </a>
+    </li>
+  </ul>
+</nav>

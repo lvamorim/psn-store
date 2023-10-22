@@ -1,0 +1,10 @@
+@use '../../../../styles.scss' as *;
+
+p {
+  font-size: .8rem;
+  text-align: center;
+}
+
+a:hover {
+  color: $secondary-dark-color;
+}

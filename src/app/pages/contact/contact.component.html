@@ -1,0 +1,12 @@
+<h1>Contact me</h1>
+<nav>
+  <ul>
+    <li *ngFor="let contact of contacts">
+      <h2>
+        <a href="{{ contact.link }}" target="_blank" rel="noopener noreferrer">
+          {{ contact.label }}
+        </a>
+      </h2>
+    </li>
+  </ul>
+</nav>

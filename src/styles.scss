@@ -1,0 +1,96 @@
+$color-contrast: 10%;
+$primary-color: #000;
+$secondary-color: #ddd;
+$secondary-dark-color: darken($secondary-color, $color-contrast);
+$tertiary-color: #0070cc;
+$tertiary-dark-color: darken($tertiary-color, $color-contrast);
+$tertiary-transparent-color: transparentize($tertiary-color, .8);
+$shadow: 2rem transparentize($primary-color, .8);
+$shape: 1rem;
+$spacing: 1rem;
+
+@mixin mediaQuery {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 $spacing;
+}
+
+.route-content {
+  h1 {
+    color: $tertiary-color;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+main {
+  flex-grow: 1;
+  margin: 8rem 0 4rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+
+  &:hover {
+    color: $tertiary-color;
+  }
+}
+
+button {
+  background-color: $tertiary-color;
+  border: none;
+  color: $secondary-color;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .5rem 2rem;
+  width: 100%;
+
+  &:hover {
+    background-color: $tertiary-dark-color;
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid currentColor;
+    border-radius: $shape;
+    color: $tertiary-color;
+
+    &:hover {
+      background-color: $tertiary-transparent-color;
+    }
+  }
+}
+
+ol, ul {
+  list-style-type: none;
+}

@@ -1,0 +1,7 @@
+@use '../../../styles.scss' as *;
+
+footer {
+  background-color: $tertiary-dark-color;
+  color: $secondary-color;
+  padding: 2rem 0;
+}

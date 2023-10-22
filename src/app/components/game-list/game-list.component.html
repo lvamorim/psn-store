@@ -1,0 +1,19 @@
+<h1>New games</h1>
+<ul class="game-list">
+  <li *ngFor="let game of games">
+    <div class="game-card">
+      <img [src]="'../../assets/img/' + game.image" alt="{{ game.name }}" loading="lazy">
+      <div class="game-info">
+        <h2 class="game-name">{{ game.name }}</h2>
+        <div class="game-tags">
+          <span *ngFor="let tag of game.tags">
+            {{ tag }}
+          </span>
+        </div>
+        <span class="price">
+          {{ game.price != 0 ? '$' + game.price.toFixed(2) : 'Free' }}
+        </span>
+      </div>
+    </div>
+  </li>
+</ul>

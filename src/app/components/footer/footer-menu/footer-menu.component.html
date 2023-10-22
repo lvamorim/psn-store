@@ -1,0 +1,20 @@
+<nav>
+  <ul>
+    <li><h2>About us</h2></li>
+    <li *ngFor="let link of website">
+      <a [routerLink]="[link.link]">{{ link.label }}</a>
+    </li>
+  </ul>
+  <ul>
+    <li><h2>Products</h2></li>
+    <li *ngFor="let link of products">
+      <a [routerLink]="[link.link]">{{ link.label }}</a>
+    </li>
+  </ul>
+  <ul>
+    <li><h2>Follow us</h2></li>
+    <li *ngFor="let link of socials">
+      <a href="{{ link.link }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+    </li>
+  </ul>
+</nav>
