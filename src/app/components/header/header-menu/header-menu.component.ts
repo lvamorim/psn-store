@@ -14,6 +14,7 @@ export class HeaderMenuComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.getRoutes();
+        window.scrollTo(0, -10);
       }
     });
   }
