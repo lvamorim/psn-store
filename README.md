@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <img src="https://github.com/lvamorim/psn-store/assets/118397791/" alt="PSN Store" width="500px">
+  <img src="https://github.com/lvamorim/psn-store/assets/118397791/0cfae615-e816-48f0-be33-7cbf1ce82715" alt="PSN Store" width="500px">
 </div>
 
 ## Topics
@@ -23,7 +23,7 @@
 **PSN Store** is a web application built using Angular and inspired by the [Playstation Store](https://store.playstation.com). The project was proposed by Digital Innovation One (DIO) with the goal of practicing the knowledge acquired in their courses.
 
 ## Deploy
-> https://psnstore.vercel.app/
+> https://lv-psnstore.vercel.app/
 
 ## Techniques
 - Interfaces
